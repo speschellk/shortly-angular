@@ -14,7 +14,8 @@ angular.module('shortly', [
     .when('/signup', {
       templateUrl: 'app/auth/signup.html',
       controller: 'AuthController'
-    })
+    });
+    /*shortening, links display, logout, services?*/
     // Your code here
 
     // We add our $httpInterceptor into the array

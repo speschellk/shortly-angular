@@ -7,9 +7,26 @@
   </head>
   <body>
     <h1>Shortly</h1>
+    <div class='navigation'>
+      <ul>
+        <li><a href='#' class='index'>All Links</a></li>
+        <li><a href='#' class='create'>Shorten</a></li>
+      </ul>
+     <!--  <div class='logout'>
+        <form action='/logout' method='get'>
+          <input type='submit' value='Logout'>
+        </form>
+      </div> -->
+    </div>
 
     <!-- the ng-view directive is where our templates will be loaded into when naviagted to -->
     <div ng-view></div>
+
+    <br/>
+
+    <pre>
+      hello world
+    </pre>
 
     <script src="lib/angular/angular.js"></script>
     <script src="lib/angular-route/angular-route.js"></script>
