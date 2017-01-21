@@ -34,7 +34,7 @@ describe('LinksController', function () {
     sinon.spy(Links, 'getAll');
     $httpBackend.expectGET('/api/links').respond(200);
 
-    createController();
+    var cont = createController();
     $httpBackend.flush();
 
     expect(Links.getAll.called).to.equal(true);
