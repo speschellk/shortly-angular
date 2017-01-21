@@ -1,7 +1,32 @@
 angular.module('shortly.services', [])
 
 .factory('Links', function ($http) {
-  // Your code here
+  var shorten = function (link) {
+    return $http({
+      method: 'POST',
+      url: '/api/links',
+      data: link
+    });
+  };
+  var getAll = function (links) {
+    return $http ({
+      method: 'GET',
+      url: '/api/links',
+      data: links /*placeholder for the links collection*/
+    });
+  };
+  var addOne = function (link) {
+    return $http({
+      method: 'POST',
+      url: '/api/links',
+      data: link
+    });
+  };
+  return {
+    shorten: shorten,
+    getAll: getAll,
+    addOne: addOne
+  };
 })
 
 

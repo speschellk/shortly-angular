@@ -18,6 +18,7 @@ describe('Services', function () {
     }));
 
     it('should exist', function () {
+      console.log(Links, 'these are the links')
       expect(Links).to.exist;
     });
 

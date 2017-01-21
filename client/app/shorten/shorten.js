@@ -4,11 +4,11 @@ angular.module('shortly.shorten', [])
   // Your code here
 
   // shorten link before add to Links array
-  
+
   $scope.Links = [];
 
-  // $scope.addLink = () => {
-  //   $scope.Links.push($scope.longLink);
+  $scope.addLink = function( ) {
+    $scope.Links.push($scope.shortLink);
 
-  // };
+  };
 });
