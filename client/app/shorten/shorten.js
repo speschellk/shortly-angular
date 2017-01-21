@@ -5,10 +5,16 @@ angular.module('shortly.shorten', [])
 
   // shorten link before add to Links array
 
-  $scope.Links = [];
+  $scope.link;
 
   $scope.addLink = function( ) {
     $scope.Links.push($scope.shortLink);
 
   };
 });
+
+// should have a link property on the $scope
+
+// should be able to create new links with addLink()
+
+// should be able to create new links with addLink()
